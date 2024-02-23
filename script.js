@@ -154,7 +154,7 @@ searchForm.addEventListener("submit", (e) => {
     let cityName = searchInput.value;
 
 
-    if(cityName ===undefined)
+    if(cityName ==="")
     {
         return ;
     }
@@ -164,7 +164,7 @@ searchForm.addEventListener("submit", (e) => {
 
       
      }
-    // fetchSearchWeatherInfo(cityName);
+
 
    
 });
