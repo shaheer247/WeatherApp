@@ -1,8 +1,3 @@
-// e53f8a5db704793aa1141ceb2d81e2ba
-//https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
-//https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
-// d1845658f92b31c64bd94f06f7188c9c
-
 const userTab = document.querySelector("[data-userWeather]");
 const searchTab = document.querySelector("[data-searchWeather]");
 const userContainer = document.querySelector(".weather-container");
@@ -38,8 +33,6 @@ function switchTab(clickedTab){
         searchForm.classList.remove("active");
         userInfoContainer.classList.remove("active");
         errorDisplay.classList.remove("active");
-
-        // errorDisplay.classList.remove("active");
         //ab main your weather tab me aagya hu, toh weather bhi display karna poadega, so let's check local storage first
         //for coordinates, if we haved saved them there.
         getfromSessionStorage();
